@@ -1,8 +1,8 @@
 Self
 ====
 
-Is a interpreted general purpose programming language.
-That can be statically or dynamically typed on preference.
+Is an interpreted general purpose programming language.
+That can be statically or dynamically typed.
 Cleans up declared variables if their aren't referred to.
 It is a block oriented language where cascading of blocks elicits logic and structure.
 
