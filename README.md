@@ -104,7 +104,7 @@ private: Private method called on instance
 public: Public method called on instance  
 
 i32 {  
-  + <- (a,b) {  
+  `+` <- (a,b) {  
     return add(a,b);  
   }  
 }  
