@@ -121,7 +121,7 @@ vec[] <- 9, 0, 3, 4; TYPE i32
 
 Compiling
 ---------
-Clone repo
-cd into source directory
-make
+Clone repo  
+cd into source directory  
+make  
 ./self main.sf
