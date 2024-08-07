@@ -68,19 +68,6 @@ x < 10 {
 
 !? EXITING FATAL USE WITH CAUTION, CANT BE HANDLED
 
-Class <- {
-  init <- ()
-  {
-  }
-
-  end <- 
-  {
-  }
-}
-
-instance:Class <- Class(); CREATING OBJECT WITH EXPLICIT TYPE
-instance  <- Class();      CREATING OBJECT WITH NO EXPLICIT TYPE
-
 Casting
 -------
 
@@ -121,6 +108,9 @@ i32 {
     return add(a,b);
   }
 }
+
+instance:Class <- Class(); CREATING OBJECT WITH EXPLICIT TYPE
+instance  <- Class();      CREATING OBJECT WITH NO EXPLICIT TYPE
 
 Creating a vector
 -----------------
