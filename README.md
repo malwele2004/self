@@ -31,59 +31,59 @@ Handling Exception
 func <- (a, b) {   
   $ this is a comment   
   !?   
-} :: {
-  parent.variable = SOMETHING;
-  parent->some_function(); FUNCTION DECLARED IN PARENT
-  
-  println("Success");
-} :: {
-  THIS CASCADING CAN CONTINUE
-  skip; SKIP BLOCK
-  break; BREAK BLOCK goes out of cascading blocks
-  self; CALL ITSELF creating loops
-}
+} :: {  
+  parent.variable = SOMETHING;   
+  parent->some_function(); FUNCTION DECLARED IN PARENT  
+    
+  println("Success");  
+} :: {  
+  THIS CASCADING CAN CONTINUE  
+  skip; SKIP BLOCK  
+  break; BREAK BLOCK goes out of cascading blocks  
+  self; CALL ITSELF creating loops   
+}  
 
 loop
 -----
 
-x <- 0;
+x <- 0;   
 
-x < 10 {
-  println("Hello world");
-  x++;
-  self;
-}
+x < 10 {   
+  println("Hello world");   
+  x++;   
+  self;   
+}   
 
-x < 10 {
-  print("This is a if-else-if-block");
-} x == 10 :: {
-  MUST HAVE A CONDITION OR ELSE THIS WILL BE A CASCADING BLOCK THAT ONLY WORKS ON PARENT FAIL, CONDITIONAL BLOCKS CAN'T ACCESS PARENT INFORMATION
-  print("e");
-} x > 10 and x < 20 :: {
-  print("wow");
-} any :: { ELSE
-  print("Infinite loop else");
-  self; THAT IS A LOOP
-}
+x < 10 {   
+  print("This is a if-else-if-block");   
+} x == 10 :: {   
+  MUST HAVE A CONDITION OR ELSE THIS WILL BE A CASCADING BLOCK THAT ONLY WORKS ON PARENT FAIL, CONDITIONAL BLOCKS CAN'T ACCESS PARENT INFORMATION   
+  print("e");   
+} x > 10 and x < 20 :: {  
+  print("wow");  
+} any :: { ELSE  
+  print("Infinite loop else");   
+  self; THAT IS A LOOP  
+}  
 
-!? EXITING FATAL USE WITH CAUTION, CANT BE HANDLED
+!? EXITING FATAL USE WITH CAUTION, CANT BE HANDLED  
 
 Casting
 -------
 
-x <- 12.45:i32
+x <- 12.45:i32  
 
 Declaring array
 ---------------
-arr[5] <- 1,2,3,4,5; ; DECLARING OF I32
-arr[2] <- "hello", 45.5 ; DECLARING ARRAY OF ANY
+arr[5] <- 1,2,3,4,5; ; DECLARING OF I32  
+arr[2] <- "hello", 45.5 ; DECLARING ARRAY OF ANY  
 
-arr[34] <- 0; FILLS THE REST WITH ZERO, i32
+arr[34] <- 0; FILLS THE REST WITH ZERO, i32  
 
 With type
 ----
-arr:i32[10];
-arr:i32[10] <- 1,2,3;
+arr:i32[10];  
+arr:i32[10] <- 1,2,3;  
 
 Indexing
 --------
@@ -92,30 +92,30 @@ y <- arr[5]:f64; ELEMENT IS CASTED TO F64, AND PUT INTO Y THAT IF DOES NOT EXIST
 Interface/Class
 -----
 
-Interface simply adds more methods to existing class
+Interface simply adds more methods to existing class  
 
-specifiers on methods of inteface or Class
+specifiers on methods of inteface or Class  
 
-global, local, private, public
+global, local, private, public  
 
-global: Public method called without instance e.g. i32::parse_string(str);
-local : Private method called without instance e.g. i32::is_overflow(); USED INTERNALLY IN CLASS/INTERFACE
-private: Private method called on instance
-public: Public method called on instance
+global: Public method called without instance e.g. i32::parse_string(str);  
+local : Private method called without instance e.g. i32::is_overflow(); USED INTERNALLY IN CLASS/INTERFACE  
+private: Private method called on instance  
+public: Public method called on instance  
 
-i32 {
-  + <- (a,b) {
-    return add(a,b);
-  }
-}
+i32 {  
+  + <- (a,b) {  
+    return add(a,b);  
+  }  
+}  
 
-instance:Class <- Class(); CREATING OBJECT WITH EXPLICIT TYPE
-instance  <- Class();      CREATING OBJECT WITH NO EXPLICIT TYPE
+instance:Class <- Class(); CREATING OBJECT WITH EXPLICIT TYPE  
+instance  <- Class();      CREATING OBJECT WITH NO EXPLICIT TYPE  
 
 Creating a vector
 -----------------
 
-vec[]; TYPE ANY[]
-vec[] <- 9, 0, 3, 4; TYPE i32
+vec[]; TYPE ANY[]  
+vec[] <- 9, 0, 3, 4; TYPE i32  
 
 
