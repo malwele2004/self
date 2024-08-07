@@ -1,13 +1,13 @@
 Self
 ====
 
-Is an interpreted general purpose programming language.
-That can be statically or dynamically typed.
-Cleans up declared variables if their aren't referred to.
-It is a block oriented language where cascading of blocks elicits logic and structure.
+Is an interpreted general purpose programming language.  
+That can be statically or dynamically typed.  
+Cleans up declared variables if their aren't referred to.  
+It is a block oriented language where cascading of blocks elicits logic and structure.  
 
-Feels like C and runs like any typical interepreted programming language.
-Help me grow by reporting bugs and criticize this project `email: malwele085@gmail.com`
+Feels like C and runs like any typical interepreted programming language.  
+Help me grow by reporting bugs and criticize this project `email: malwele085@gmail.com`  
 
 Syntax
 ------
@@ -16,21 +16,21 @@ include types.sf INCLUDING MODULE
 
 Types
 ------
-Types With Default Values: ptr(?), any(?), i8(0), u8(0), i16(0), u16(0), i32(0), u32(0), i64(0), u64(0), type(type,...)(function ret_type(parater_list)), cstr, string, bool, f32, f64
-Operators : +, -, %, *, / , <, >, <= , >=, is, ^, and, or, <- (assignment), ->(calling a method off instance), .(getting attribute)
-Prefixes  : @ (address of), # Deference, !(readonly pointer), &(readwrite pointer), const(makes type const)
-Suffixes  : [N], []
+Types With Default Values: ptr(?), any(?), i8(0), u8(0), i16(0), u16(0), i32(0), u32(0), i64(0), u64(0), type(type,...)(function ret_type(parater_list)), cstr, string, bool, f32, f64   
+Operators : +, -, %, *, / , <, >, <= , >=, is, ^, and, or, <- (assignment), ->(calling a method off instance), .(getting attribute)   
+Prefixes  : @ (address of), # Deference, !(readonly pointer), &(readwrite pointer), const(makes type const)   
+Suffixes  : [N], []   
 
-?   : Null value
-!?  : Throws exception
-??  : Fatal error
+?   : Null value   
+!?  : Throws exception   
+??  : Fatal error   
 
 Handling Exception 
 -----------------
 
-func <- (a, b) {
-  $ this is a comment
-  !? 
+func <- (a, b) {   
+  $ this is a comment   
+  !?   
 } :: {
   parent.variable = SOMETHING;
   parent->some_function(); FUNCTION DECLARED IN PARENT
